@@ -6,7 +6,13 @@
 #-----------------------------------------------------------------------------------
 import os
 import subprocess
-print (os.system('notepad.exe'))
+#os.system('notepad.exe')
+def opensteam():
+    subprocess.call("C:\SteamR\Steam\steam.exe")
+
+#subprocess.call()
+subprocess.call("C:\Program Files\Google\Drive File Stream\launch.bat")
+subprocess.call("C:\SteamR\Steam\steamapps\common\Terraria\Terraria.exe")
 print("Hello, welcome to the PC!")
 print("I'm still a work in progress so have patience.")
 print("My creator has big plans for me.")
