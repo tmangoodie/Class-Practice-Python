@@ -82,11 +82,17 @@ def replacestring():
     return neweststring
 #----------------------------------------------------------------------------------------
 #function #8 
-#Write a function that prints the lengt of a string that is passed to it then folds the string until its all reversed
-def reversestring():
-    firststring = input("What string would you like reversed? ")
-    stringlength = len(firststring)
-#make a loop
+#Write a function that prints the length of a string that is passed to it then folds the string until its all reversed
+#def reversestring():
+firststring = input("What string would you like reversed? ")
+stringlength = len(firststring)
+#for counter in firststring:
+newstring = firststring[-1] + firststring[0:stringlength-1]
+print(newstring)
+#Counter needs to be what goes up and is used as the index to change the string
+#in the string abcd the resulting string should be dcba
+#should have 3 seperate outputs, dabc, dcab, dcba
+    
     
     
 
@@ -113,17 +119,26 @@ if (response == "q"):
     exit()
 elif (response == "1"):
     print (greeting())
+    runpy.run_path("g:\My Drive\Class Digital Notebooks\CNS1\Programming\Python Scripts\CNS Problems.py")
 elif (response == "2"):
     print (addtwo())
+    runpy.run_path("g:\My Drive\Class Digital Notebooks\CNS1\Programming\Python Scripts\CNS Problems.py")
 elif (response == "3"):
     print(nextnumber())
+    runpy.run_path("g:\My Drive\Class Digital Notebooks\CNS1\Programming\Python Scripts\CNS Problems.py")
 elif (response == "4"):
     print(minsec())
+    runpy.run_path("g:\My Drive\Class Digital Notebooks\CNS1\Programming\Python Scripts\CNS Problems.py")
 elif (response == "5"):
     print(alivefor())
+    runpy.run_path("g:\My Drive\Class Digital Notebooks\CNS1\Programming\Python Scripts\CNS Problems.py")
 elif (response == "6"):
     print(stringchange())
+    runpy.run_path("g:\My Drive\Class Digital Notebooks\CNS1\Programming\Python Scripts\CNS Problems.py")
 elif (response == "7"):
     print(replacestring())
+    runpy.run_path("g:\My Drive\Class Digital Notebooks\CNS1\Programming\Python Scripts\CNS Problems.py")
 else:   
     runpy.run_path("g:\My Drive\Class Digital Notebooks\CNS1\Programming\Python Scripts\CNS Problems.py")
+    
+    
