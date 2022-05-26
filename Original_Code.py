@@ -5,8 +5,6 @@
 #The code will be able to open and close applications, possibly input an application name and it will open/close it
 #-----------------------------------------------------------------------------------
 import os
-from tracemalloc import start
-from unittest.mock import call
 import subprocess
 import webbrowser
 chrome_path = "C:\QuickNeed\Google\Chrome\Application\chrome.exe"
