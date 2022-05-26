@@ -45,6 +45,9 @@ def menuopen():
     elif (x == 'terraria'):
         print("Opening Terraria...")
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\Terraria\Terraria.exe")
+    elif (x == "esc"):
+        print("Opening The Escapists...")
+        subprocess.call("C:\QuickNeed\Steam\steamapps\common\The_Escapists\Escapists.exe")
     else:
         print("That program was either not recognized or has not been inputted into the program.")
         print("Please retry opening the program if there was a typo.")
