@@ -12,23 +12,26 @@ import webbrowser
 chrome_path = "C:\QuickNeed\Google\Chrome\Application\chrome.exe"
 webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path))
 #os.system('notepad.exe')   
-def opendrive():
-    subprocess.call("C:\Program Files\Google\Drive File Stream\launch.bat")    
 #def opengeforce():
     #subprocess.call("C:")
 print("Hello, welcome to the PC!")
 print("I'm still a work in progress so have patience.")
 print("My creator has big plans for me.")
+
 def menuopen():
-    x = input("What would you like to open? ")
+    x = input("What would you like to open? Q to quit. ")
     if (x == "q"):
         print("Exiting Program...")
         exit()
     elif (x == "chrome"):
         print("Opening Chrome...")
         webbrowser.get('chrome').open_new_tab("chrome://newtab/")
-    #except():
-        #print("Unrecognized response, Please re enter what you were trying to say")
+    elif (x == "drive"):
+        print("Opening Drive...")
+        subprocess.call("C:\Program Files\Google\Drive File Stream\launch.bat")
+    elif (x == "github"):
+        print("Opening GitHub...")
+        webbrowser.get('chrome').open("https://github.com/tmangoodie")
     elif (x == "youtube"):
         print("Opening Youtube...")
         webbrowser.get('chrome').open("https://www.youtube.com/")
@@ -44,5 +47,11 @@ def menuopen():
     elif (x == 'terraria'):
         print("Opening Terraria...")
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\Terraria\Terraria.exe")
+    else:
+        print("That program was either not recognized or has not been inputted into the program.")
+        print("Please retry opening the program if there was a typo.")
+        print("If you want a program added to the program add it.")
     return(menuopen())
+    
+
 print(menuopen())
