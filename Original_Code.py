@@ -48,9 +48,6 @@ def menuopen():
     elif (x == "esc"):
         print("Opening The Escapists...")
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\The_Escapists\Escapists.exe")
-    elif (x == "geo"):
-        print("Opening Geometry Dash...")
-        subprocess.call("C:\QuickNeed\Steam\steamapps\common\Geometry_Dash\GeometryDash.exe")
     else:
         print("That program was either not recognized or has not been inputted into the program.")
         print("Please retry opening the program if there was a typo.")
