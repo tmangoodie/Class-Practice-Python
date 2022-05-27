@@ -23,32 +23,37 @@ def menuopen():
         print("Exiting Program...")
         exit()
     elif (x == "chrome"):
-        print("Opening Chrome...")
+        
         webbrowser.get('chrome').open_new_tab("chrome://newtab/")
     elif (x == "drive"):
-        print("Opening Drive...")
+        
         webbrowser.get('chrome').open("https://drive.google.com/drive/u/0/my-drive")
     elif (x == "github"):
-        print("Opening GitHub...")
+        
         webbrowser.get('chrome').open("https://github.com/tmangoodie")
     elif (x == "youtube"):
-        print("Opening Youtube...")
+        
         webbrowser.get('chrome').open("https://www.youtube.com/")
     elif (x == "netacad"):
-        print("Opening Cisco Netacademy...")
+        
         webbrowser.get('chrome').open("https://www.netacad.com/")
     elif (x== "steam"):
-        print("Opening Steam....")
+        
         subprocess.call("C:\QuickNeed\Steam\steam.exe")
     elif (x == "wordle"):
-        print("Opening Wordle, good luck...")
+        
         webbrowser.get('chrome').open("https://www.nytimes.com/games/wordle/index.html")
     elif (x == 'terraria'):
-        print("Opening Terraria...")
+        
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\Terraria\Terraria.exe")
     elif (x == "esc"):
-        print("Opening The Escapists...")
+        
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\The_Escapists\Escapists.exe")
+    elif (x == "geo"):
+        
+        subprocess.call("C:\QuickNeed\Steam\steamapps\common\Geometry_Dash_Old\GeometryDash.exe")
+    elif (x == "vs"):
+        subprocess.call("C:\Users\Tgoodwin\AppData\Roaming\Microsoft\Windows\Start_Menu\Programs\Visual_Studio_Code\code.exe")
     else:
         print("That program was either not recognized or has not been inputted into the program.")
         print("Please retry opening the program if there was a typo.")
