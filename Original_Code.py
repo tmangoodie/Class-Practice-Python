@@ -35,7 +35,7 @@ def menuopen():
         webbrowser.get('chrome').open("https://www.youtube.com/")
     elif (x == "netacad"):
         print("Opening Cisco Netacademy...")
-        webbrowser.get('chrome').open("https://id.cisco.com/")
+        webbrowser.get('chrome').open("https://www.netacad.com/")
     elif (x== "steam"):
         print("Opening Steam....")
         subprocess.call("C:\QuickNeed\Steam\steam.exe")
