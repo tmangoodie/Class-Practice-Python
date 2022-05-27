@@ -26,7 +26,7 @@ def menuopen():
         webbrowser.get('chrome').open_new_tab("chrome://newtab/")
     elif (x == "drive"):
         print("Opening Drive...")
-        subprocess.call("C:\Program Files\Google\Drive File Stream\launch.bat")
+        webbrowser.get('chrome').open("https://drive.google.com/drive/u/0/my-drive")
     elif (x == "github"):
         print("Opening GitHub...")
         webbrowser.get('chrome').open("https://github.com/tmangoodie")
