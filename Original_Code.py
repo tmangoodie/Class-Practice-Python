@@ -53,7 +53,7 @@ def menuopen():
         
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\Geometry_Dash_Old\GeometryDash.exe")
     elif (x == "vs"):
-        subprocess.call("C:\Users\Tgoodwin\AppData\Roaming\Microsoft\Windows\Start_Menu\Programs\Visual_Studio_Code\code.exe")
+        subprocess.call()
     else:
         print("That program was either not recognized or has not been inputted into the program.")
         print("Please retry opening the program if there was a typo.")
