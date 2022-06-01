@@ -23,37 +23,28 @@ def menuopen():
         print("Exiting Program...")
         exit()
     elif (x == "chrome"):
-        
         webbrowser.get('chrome').open_new_tab("chrome://newtab/")
     elif (x == "drive"):
-        
         webbrowser.get('chrome').open("https://drive.google.com/drive/u/0/my-drive")
     elif (x == "github"):
-        
         webbrowser.get('chrome').open("https://github.com/tmangoodie")
     elif (x == "youtube"):
         
         webbrowser.get('chrome').open("https://www.youtube.com/")
     elif (x == "netacad"):
-        
         webbrowser.get('chrome').open("https://www.netacad.com/")
     elif (x== "steam"):
-        
         subprocess.call("C:\QuickNeed\Steam\steam.exe")
     elif (x == "wordle"):
-        
         webbrowser.get('chrome').open("https://www.nytimes.com/games/wordle/index.html")
     elif (x == 'terraria'):
-        
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\Terraria\Terraria.exe")
     elif (x == "esc"):
-        
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\The_Escapists\Escapists.exe")
-    elif (x == "geo"):
-        
-        subprocess.call("C:\QuickNeed\Steam\steamapps\common\Geometry_Dash_Old\GeometryDash.exe")
     elif (x == "vs"):
         subprocess.call()
+    elif (x == "Wallpaper"):
+        subprocess.call("C:\QuickNeed\Steam\steamapps\common\wallpaper_engine\launcher.exe")
     else:
         print("That program was either not recognized or has not been inputted into the program.")
         print("Please retry opening the program if there was a typo.")
