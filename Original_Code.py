@@ -31,7 +31,6 @@ def menuopen():
     elif (x == "github"):
         webbrowser.get('chrome').open("https://github.com/tmangoodie")
     elif (x == "youtube"):
-        
         webbrowser.get('chrome').open("https://www.youtube.com/")
     elif (x == "netacad"):
         webbrowser.get('chrome').open("https://www.netacad.com/")
