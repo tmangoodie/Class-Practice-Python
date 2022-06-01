@@ -42,8 +42,8 @@ def menuopen():
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\Terraria\Terraria.exe")
     elif (x == "esc"):
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\The_Escapists\Escapists.exe")
-    elif (x == "Wallpaper"):
-        subprocess.call("C:\QuickNeed\Steam\steamapps\common\wallpaper_engine\launcher.exe")
+    elif (x == "wallpaper"):
+        subprocess.call("C:\QuickNeed\Steam\steamapps\common\wallpaper_engine\wallpaper64.exe")
     else:
         print("That program was either not recognized or has not been inputted into the program.")
         print("Please retry opening the program if there was a typo.")
