@@ -40,11 +40,12 @@ def menuopen():
         webbrowser.get('chrome').open("https://www.nytimes.com/games/wordle/index.html")
     elif (x == 'terraria'):
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\Terraria\Terraria.exe")
-    elif (x == "esc"):
+    elif (x == "escapists"):
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\The_Escapists\Escapists.exe")
     elif (x == "wallpaper"):
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\wallpaper_engine\wallpaper64.exe")
     else:
+        #Will print this if the input isnt recognized as any of the options
         print("That program was either not recognized or has not been inputted into the program.")
         print("Please retry opening the program if there was a typo.")
         print("If you want a program added to the program add it.")
