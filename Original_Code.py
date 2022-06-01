@@ -8,20 +8,22 @@ import os
 import runpy
 import subprocess
 import webbrowser
+#Importing webbrowser and subprocess allows me to open webpages and apps from the code.
+#Chrome_path makes a variable for registering the webbrowser.
 chrome_path = "C:\QuickNeed\Google\Chrome\Application\chrome.exe"
 webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path))
 #os.system('notepad.exe')   
 #def opengeforce():
     #subprocess.call("C:")
 print("Hello, welcome to the PC!")
-print("I'm still a work in progress so have patience.")
-print("My creator has big plans for me.")
-
+#All of this menu is in menu open.
+#I plan to make another menu to close apps
 def menuopen():
     x = input("What would you like to open? Q to quit. ")
     if (x == "q"):
         print("Exiting Program...")
         exit()
+        #Exis stops the program in its tracks, one of my first priorities
     elif (x == "chrome"):
         webbrowser.get('chrome').open_new_tab("chrome://newtab/")
     elif (x == "drive"):
@@ -41,8 +43,6 @@ def menuopen():
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\Terraria\Terraria.exe")
     elif (x == "esc"):
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\The_Escapists\Escapists.exe")
-    elif (x == "vs"):
-        subprocess.call()
     elif (x == "Wallpaper"):
         subprocess.call("C:\QuickNeed\Steam\steamapps\common\wallpaper_engine\launcher.exe")
     else:
