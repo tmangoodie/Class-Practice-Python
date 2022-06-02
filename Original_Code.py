@@ -50,7 +50,7 @@ def menuopen():
         print("That program was either not recognized or has not been inputted into the program.")
         print("Please retry opening the program if there was a typo.")
         print("If you want a program added to the program add it.")
-    return(runpy.run_path())
+    return(runpy.run_path("C:\Users\Tgoodwin\Desktop\Class-Practice-Python\Class-Practice-Python\Class-Practice-Python\import_os.py"))
     
 def menuclose():
     y = input("What program would you like to close?" )
@@ -60,4 +60,4 @@ def menuclose():
     elif (y == 'chrome'):
         for process in (process for process in psutil.process_iter() if process.name()=="chrome.exe"):
             process.kill()
-#print(menuopen())
+print(menuopen())
