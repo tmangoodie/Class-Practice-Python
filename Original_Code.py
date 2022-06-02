@@ -8,6 +8,7 @@ import os
 import runpy
 import subprocess
 import webbrowser
+import psutil
 #Importing webbrowser and subprocess allows me to open webpages and apps from the code.
 #Chrome_path makes a variable for registering the webbrowser.
 chrome_path = "C:\QuickNeed\Google\Chrome\Application\chrome.exe"
@@ -51,5 +52,9 @@ def menuopen():
         print("If you want a program added to the program add it.")
     return(menuopen())
     
+#def menuclose():
+os.system('notepad.exe')    
+for pid in (process.pid for process in psutil.process_iter() if process.name()=="notepad.exe"):
+    os.kill(pid)
 
-print(menuopen())
+#zprint(menuopen())
