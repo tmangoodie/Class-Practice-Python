@@ -61,11 +61,12 @@ def menuclose():
         print("Exiting Program...")
         exit()
     elif (y == 'chrome'):
+        #force quits chrome and can be used as a template for other program closing codes
         for process in (process for process in psutil.process_iter() if process.name()=="chrome.exe"):
             process.kill()
     elif (y == 'b'):
-        return(menumenu())
-    
+        return(menuclose())
+    #
 
 def menumenu():
     z = input("Would you like to open or close programs? ")
