@@ -16,15 +16,16 @@ webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path))
 #os.system('notepad.exe')   
 #def opengeforce():
     #subprocess.call("C:")
-print("Hello, welcome to the PC!")
 #All of this menu is in menu open.
 #I plan to make another menu to close apps
 def menuopen():
-    x = input("What would you like to open? Q to quit. ")
+    x = input("What would you like to open? b to go back")
     if (x == "q"):
         print("Exiting Program...")
         exit()
         #Exis stops the program in its tracks, one of my first priorities
+    elif (x == 'b'):
+        return(menumenu())
     elif (x == "chrome"):
         webbrowser.get('chrome').open_new_tab("chrome://newtab/")
     elif (x == "drive"):
@@ -61,8 +62,21 @@ def menuclose():
     elif (y == 'chrome'):
         for process in (process for process in psutil.process_iter() if process.name()=="chrome.exe"):
             process.kill()
+    
+
+def menumenu():
+    print("Hello, welcome to the PC!")
+    z = input("Would you like to open or close programs? ")
+    if (z == "close"):
+        return(menuclose())
+    elif (z == "open"):
+        return(menuopen())
+    elif (z == 'q'):
+        print("Exiting Program...")
+        exit()
+    else:
+        print("That was not recognized, please retry. ")
+        return(menumenu())
 
 
-
-
-#print(menuopen())
+print(menumenu())
