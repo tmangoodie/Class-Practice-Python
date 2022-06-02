@@ -52,9 +52,12 @@ def menuopen():
         print("If you want a program added to the program add it.")
     return(menuopen())
     
-#def menuclose():
-os.system('notepad.exe')    
-for pid in (process.pid for process in psutil.process_iter() if process.name()=="notepad.exe"):
-    os.kill(pid)
-
-#zprint(menuopen())
+def menuclose():
+    y = input("What program would you like to close?" )
+    if (y == 'q'):
+        print("Exiting Program...")
+        exit()
+    elif (y == 'chrome'):
+        for process in (process for process in psutil.process_iter() if process.name()=="chrome.exe"):
+            process.kill()
+#print(menuopen())
