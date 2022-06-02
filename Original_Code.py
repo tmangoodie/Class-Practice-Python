@@ -65,8 +65,9 @@ def menuclose():
         for process in (process for process in psutil.process_iter() if process.name()=="chrome.exe"):
             process.kill()
     elif (y == 'b'):
-        return(menuclose())
-    #
+        return(menumenu())
+    return(menuclose())
+    #will bring the menu back after being used
 
 def menumenu():
     z = input("Would you like to open or close programs? ")
