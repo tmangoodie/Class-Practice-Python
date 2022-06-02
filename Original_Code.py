@@ -18,8 +18,9 @@ webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path))
     #subprocess.call("C:")
 #All of this menu is in menu open.
 #I plan to make another menu to close apps
+print("Hello, welcome to the PC!")
 def menuopen():
-    x = input("What would you like to open? b to go back")
+    x = input("What would you like to open? b to go back. ")
     if (x == "q"):
         print("Exiting Program...")
         exit()
@@ -55,17 +56,18 @@ def menuopen():
     #return(runpy.run_path(r"C:\Users\Tgoodwin\Desktop\Class-Practice-Python\Class-Practice-Python\Class-Practice-Python\menu_function"))
     
 def menuclose():
-    y = input("What program would you like to close?" )
+    y = input("What program would you like to close? b to go back. ")
     if (y == 'q'):
         print("Exiting Program...")
         exit()
     elif (y == 'chrome'):
         for process in (process for process in psutil.process_iter() if process.name()=="chrome.exe"):
             process.kill()
+    elif (y == 'b'):
+        return(menumenu())
     
 
 def menumenu():
-    print("Hello, welcome to the PC!")
     z = input("Would you like to open or close programs? ")
     if (z == "close"):
         return(menuclose())
@@ -75,7 +77,7 @@ def menumenu():
         print("Exiting Program...")
         exit()
     else:
-        print("That was not recognized, please retry. ")
+        print("That was not recognized, please retry.")
         return(menumenu())
 
 
