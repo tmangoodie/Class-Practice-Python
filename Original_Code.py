@@ -50,7 +50,7 @@ def menuopen():
         print("That program was either not recognized or has not been inputted into the program.")
         print("Please retry opening the program if there was a typo.")
         print("If you want a program added to the program add it.")
-    return(menuopen())
+    return(runpy.run_path())
     
 def menuclose():
     y = input("What program would you like to close?" )
